@@ -1,0 +1,83 @@
+Console output details would look like as below:
+---------------------------------------------------
+
+Scenario: Check PostCode service API response and validate the response content # FeatureFiles/Check_API_Response.feature:3
+API URL: api.postcodes.io/postcodes/SW1P4JA
+  Given User has valid base URI                                                 # StepDefinitions.stepDefinitions_APIResponse.user_sends_api_get_request()
+  When User makes a get request to postcode service                             # StepDefinitions.stepDefinitions_APIResponse.user_makes_a_get_request_to_postcode_service()
+Actual Status code: 200
+Expected Status code: 200
+  Then User receive response status code as 200                                 # 
+-----------------------------------------------
+PostCode service API response: 
+response postcode = SW1P 4JA
+response country = England
+response region = London
+-----------------------------------------------
+  Then Validate the response content                                            # StepDefinitions.stepDefinitions_APIResponse.validate_the_response_content()
+
+----------------------------------------------------------------------------------------------
+Scenario: Check for UK Visa requirement for Japan member for Study purpose more than 6 months # FeatureFiles/Check_Japan_Study.feature:4
+
+  Given User provides nationality as "Japan"                                                  # StepDefinitions.stepDefinitions_Common.user_provides_nationality_as(java.lang.String)
+  And User clicks on Next Step button                                                         # StepDefinitions.stepDefinitions_Common.user_clicks_on_next_step_button()
+  When User selects reason as Study                                                           # StepDefinitions.stepDefinitions_Common.user_selects_reason_as_study()
+  And User clicks on Next Step button                                                         # StepDefinitions.stepDefinitions_Common.user_clicks_on_next_step_button()
+  And User states that they intend to stay more than six months                               # StepDefinitions.stepDefinitions_Common.user_states_that_they_intend_to_stay_more_than_six_months()
+  And User clicks on Next Step button                                                         # StepDefinitions.stepDefinitions_Common.user_clicks_on_next_step_button()
+-----------------------------------------------
+Country Name: Japan
+Reason for travel to UK: Study
+Expected message: You’ll need a visa to study in the UK
+Actual message: You’ll need a visa to study in the UK
+-----------------------------------------------
+  Then User gets the message as "You’ll need a visa to study in the UK"                       # 
+
+-----------------------------------------------
+************Closing the Web Browser************
+-----------------------------------------------
+  Then Close the browser                                                                      # StepDefinitions.stepDefinitions_Common.close_the_browser()
+
+---------------------------------------------------------------------------------------------------
+Scenario: Check for UK Visa requirement for Japan member for Tourism purpose # FeatureFiles/Check_Japan_Tourism.feature:3
+
+  Given User provides nationality as "Japan"                                 # StepDefinitions.stepDefinitions_Common.user_provides_nationality_as(java.lang.String)
+  And User clicks on Next Step button                                        # StepDefinitions.stepDefinitions_Common.user_clicks_on_next_step_button()
+  When User selects reason as Tourism                                        # StepDefinitions.stepDefinitions_Common.user_selects_reason_tourism()
+  And User clicks on Next Step button                                        # StepDefinitions.stepDefinitions_Common.user_clicks_on_next_step_button()
+-----------------------------------------------
+Country Name: Japan
+Reason for travel to UK: Tourism
+Expected message: You won’t need a visa to come to the UK
+Actual message: You won’t need a visa to come to the UK
+-----------------------------------------------
+  Then User gets the message as "You won’t need a visa to come to the UK"    # 
+
+-----------------------------------------------
+************Closing the Web Browser************
+-----------------------------------------------
+  Then Close the browser                                                     # StepDefinitions.stepDefinitions_Common.close_the_browser()
+
+----------------------------------------------------------------------------------------------
+Scenario: Check for UK Visa requirement for Russia member for Tourism purpose # FeatureFiles/Check_Russia_Tourism.feature:3
+
+  Given User provides nationality as "Russia"                                 # StepDefinitions.stepDefinitions_Common.user_provides_nationality_as(java.lang.String)
+  And User clicks on Next Step button                                         # StepDefinitions.stepDefinitions_Common.user_clicks_on_next_step_button()
+  When User selects reason as Tourism                                         # StepDefinitions.stepDefinitions_Common.user_selects_reason_tourism()
+  And User clicks on Next Step button                                         # StepDefinitions.stepDefinitions_Common.user_clicks_on_next_step_button()
+  And User clicks on Yes option for Travelling with family                    # StepDefinitions.stepDefinitions_Common.user_clicks_on_yes_option_for_travelling_with_family_and_submits_the_form()
+  And User clicks on Next Step button                                         # StepDefinitions.stepDefinitions_Common.user_clicks_on_next_step_button()
+  And User clicks on Yes option for having Article Ten or Twenty card         # StepDefinitions.stepDefinitions_Common.user_clicks_on_yes_option_for_having_article_ten_or_twenty_card_and_submits_the_form()
+  And User clicks on Next Step button                                         # StepDefinitions.stepDefinitions_Common.user_clicks_on_next_step_button()
+-----------------------------------------------
+Country Name: Russia
+Reason for travel to UK: Tourism
+Expected message: You do not need a visa to come to the UK
+Actual message: You do not need a visa to come to the UK
+-----------------------------------------------
+  Then User gets the message as "You do not need a visa to come to the UK"    # 
+
+-----------------------------------------------
+************Closing the Web Browser************
+-----------------------------------------------
+  Then Close the browser                                                      # StepDefinitions.stepDefinitions_Common.close_the_browser()

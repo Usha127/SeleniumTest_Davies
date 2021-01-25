@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="44304" started-at="2021-01-25T06:10:25 GMT" finished-at="2021-01-25T06:11:09 GMT">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="44304" started-at="2021-01-25T06:10:25 GMT" finished-at="2021-01-25T06:11:09 GMT">
+      <class name="seleniumtests.MyTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:seleniumtests.MyTest@7c29daf3]" name="setUp" is-config="true" duration-ms="6001" started-at="2021-01-25T06:10:25 GMT" finished-at="2021-01-25T06:10:31 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="check_twitterLink()[pri:0, instance:seleniumtests.MyTest@7c29daf3]" name="check_twitterLink" duration-ms="4309" started-at="2021-01-25T06:10:31 GMT" finished-at="2021-01-25T06:10:35 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_twitterLink -->
+        <test-method status="PASS" signature="windup()[pri:0, instance:seleniumtests.MyTest@7c29daf3]" name="windup" is-config="true" duration-ms="1044" started-at="2021-01-25T06:10:35 GMT" finished-at="2021-01-25T06:10:36 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- windup -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:seleniumtests.MyTest@7c29daf3]" name="setUp" is-config="true" duration-ms="5620" started-at="2021-01-25T06:10:36 GMT" finished-at="2021-01-25T06:10:42 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="check_linkedinLink()[pri:1, instance:seleniumtests.MyTest@7c29daf3]" name="check_linkedinLink" duration-ms="4032" started-at="2021-01-25T06:10:42 GMT" finished-at="2021-01-25T06:10:46 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_linkedinLink -->
+        <test-method status="PASS" signature="windup()[pri:0, instance:seleniumtests.MyTest@7c29daf3]" name="windup" is-config="true" duration-ms="853" started-at="2021-01-25T06:10:46 GMT" finished-at="2021-01-25T06:10:46 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- windup -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:seleniumtests.MyTest@7c29daf3]" name="setUp" is-config="true" duration-ms="5554" started-at="2021-01-25T06:10:46 GMT" finished-at="2021-01-25T06:10:52 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="check_SolutionsLink()[pri:2, instance:seleniumtests.MyTest@7c29daf3]" name="check_SolutionsLink" duration-ms="7274" started-at="2021-01-25T06:10:52 GMT" finished-at="2021-01-25T06:10:59 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_SolutionsLink -->
+        <test-method status="PASS" signature="windup()[pri:0, instance:seleniumtests.MyTest@7c29daf3]" name="windup" is-config="true" duration-ms="835" started-at="2021-01-25T06:10:59 GMT" finished-at="2021-01-25T06:11:00 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- windup -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:seleniumtests.MyTest@7c29daf3]" name="setUp" is-config="true" duration-ms="4876" started-at="2021-01-25T06:11:00 GMT" finished-at="2021-01-25T06:11:05 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="check_LocationLink()[pri:3, instance:seleniumtests.MyTest@7c29daf3]" name="check_LocationLink" duration-ms="3031" started-at="2021-01-25T06:11:05 GMT" finished-at="2021-01-25T06:11:08 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_LocationLink -->
+        <test-method status="PASS" signature="windup()[pri:0, instance:seleniumtests.MyTest@7c29daf3]" name="windup" is-config="true" duration-ms="839" started-at="2021-01-25T06:11:08 GMT" finished-at="2021-01-25T06:11:09 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- windup -->
+      </class> <!-- seleniumtests.MyTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

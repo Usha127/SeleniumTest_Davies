@@ -1,0 +1,66 @@
+
+---------------------------------------------------
+---------------Twitter link test-------------------
+---------------------------------------------------
+
+Parent page URL = https://davies-group.com/
+Parent page title = Home - Davies
+---------------------------------------------------
+Child page title = Davies Group (@Davies_Group) / Twitter
+Child page URL = https://twitter.com/Davies_Group
+---------------------------------------------------
+Parent page URL = https://davies-group.com/
+Parent page title = Home - Davies
+---------------------------------------------------
+
+
+---------------------------------------------------
+---------------LinkedIn link test------------------
+---------------------------------------------------
+Parent page URL = https://davies-group.com/
+Parent page title = Home - Davies
+---------------------------------------------------
+Child page title = Sign Up | LinkedIn
+Child page URL = https://www.linkedin.com/authwall?trk=ripf&trkInfo=AQGuiYlXok71RgAAAXc4E58QLJYIiUlnn6_gy1mzCOj00Nv8Yv9IU0uIeWk4xKPdt0ITJs00UeiRvCuTeN9yTpDFixyuC72pPm4yNKyTF2G2O4mdCxXyVVpE6bkMf-NGQIBBrt4=&originalReferer=https://davies-group.com/&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fdaviesgroup%2F
+---------------------------------------------------
+Parent page URL = https://davies-group.com/
+Parent page title = Home - Davies
+---------------------------------------------------
+
+
+
+
+
+---------------------------------------------------
+---------------Solutions link test-----------------
+---------------------------------------------------
+Fire investigation
+Result = The dealership accepted fault and with an outlay to us of £1,495 made a recovery of £46,353.
+---------------------------------------------------
+
+
+
+
+---------------------------------------------------
+---------------Location link test------------------
+---------------------------------------------------
+Stoke on Trent
+3rd and 4th Floors, No.2 Smithfields, Stoke-on-Trent ST1 3DH, UK.
+---------------------------------------------------
+
+
+PASSED: check_twitterLink
+PASSED: check_linkedinLink
+PASSED: check_SolutionsLink
+PASSED: check_LocationLink
+
+===============================================
+    Default test
+    Tests run: 4, Failures: 0, Skips: 0
+===============================================
+
+
+===============================================
+Default suite
+Total tests run: 4, Passes: 4, Failures: 0, Skips: 0
+===============================================
